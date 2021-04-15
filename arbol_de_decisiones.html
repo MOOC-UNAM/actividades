@@ -1,0 +1,105 @@
+<html lang="es">
+<head>
+    <title>Árbol de decisiones</title>
+    <meta charset="UTF-8">
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        img {width: 300px;
+        padding: 1em;
+        }
+    </style>
+</head>
+
+<body>
+  <div class="container">
+    <div>
+      <h2 class="text-center">Prueba árbol de decisiones</h2>
+      <p>
+        Esta es una prueba de concepto de lo que podría ser un árbol de decisiones para integrarse dentro de las <b>actividades formativas</b> de Coursera.
+      </p>
+      <br>
+      <!-- First decision -->
+      <ul class="nav nav-pills nav-justified">
+        <h3 class="text-center">¿Qué decisión tomarías?</h3>
+        <p style="text-align: center;"><img src="https://gestion.pe/resizer/gIPA9PiEu7E3Am30MJK1EBmvfsM=/580x330/smart/filters:format(jpeg):quality(75)/arc-anglerfish-arc2-prod-elcomercio.s3.amazonaws.com/public/O574FSDJZBFVBCIBD372HJZU3U.jpg"> Acabas de recibir un dinero extra ¿qué vas a hacer con él?</p>
+        <br>
+        <li role="presentation" class=""><a href="#2ndDecisionYesFrom1st" aria-controls="2ndYes" role="tab" data-toggle="tab">¡Gastarlo!</a>
+        </li>
+        <li role="presentation"><a href="#2ndDecisionNoFrom1st" aria-controls="2ndNo" role="tab" data-toggle="tab">Ahorrar, obviamente</a>
+        </li>
+      </ul>
+      <br>
+      <!-- Second decision -->
+      <div class="tab-content">
+        <br>
+        <div role="tabpanel" class="tab-pane" id="2ndDecisionYesFrom1st">
+            <!-- Second decision after yes from first decision -->
+          <h3 class="text-center">¿En qué?</h3>
+          <p style="text-align: center;"> <img src="https://miro.medium.com/max/3200/1*w9fOplkOHgvz1y1UvblzCQ.png">¿Bienes o servicios?</p>
+          <br>
+          <ul class="nav nav-pills nav-justified" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#AnswerAfterYesFrom2ndYesFrom1st" role="tab">Bienes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#AnswerAfterNoFrom2ndYesFrom1st" role="tab">Servicios</a>
+            </li>
+          </ul>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="2ndDecisionNoFrom1st">
+          <h3 class="text-center">¿Dónde?</h3>
+          <p style="text-align: center;"> <img src="https://previews.123rf.com/images/sarayutsy/sarayutsy1811/sarayutsy181100014/117421248-money-growth-saving-money-upper-tree-coins-to-shown-concept-of-growing-business.jpg"> En qué lugar prefieres guardar tu dinero.</p>
+          <br>
+          <ul class="nav nav-pills nav-justified" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="tab" href="#AnswerAfterYesFrom2ndNoFrom1st" role="tab">En un banco</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#AnswerAfterNoFrom2ndNoFrom1st" role="tab">En mi casa</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <br>
+      <!-- Answers -->
+      <div class="tab-content">
+        <br>
+        <div role="tabpanel" class="tab-pane" id="AnswerAfterYesFrom2ndYesFrom1st">
+          <h3 class="text-center">¡Al centro comercial!</h3>
+          <br>
+          <p style="text-align: center;"> <img src="https://media.gettyimages.com/photos/inside-a-large-shopping-mall-in-almaty-picture-id849220866?s=612x612"></p>
+        </div>
+      </div>
+      <div class="tab-content">
+        <br>
+        <div role="tabpanel" class="tab-pane" id="AnswerAfterNoFrom2ndYesFrom1st">
+          <h3 class="text-center">¡Buen viaje!</h3>
+          <br>
+          <p style="text-align: center;"> <img src="https://foodandtravel.mx/wp-content/uploads/2019/12/SomosViajerosOK.jpg"></p>
+        </div>
+      </div>
+      <div class="tab-content">
+        <br>
+        <div role="tabpanel" class="tab-pane" id="AnswerAfterYesFrom2ndNoFrom1st">
+          <h3 class="text-center">¡Abre tu cuenta!</h3>
+          <br>
+          <p style="text-align: center;"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK7B6xv_zbd0MxOS_nEY7CV2_JdwgOcE8NVQ&usqp=CAU"></p>
+        </div>
+      </div>
+      <div class="tab-content">
+        <br>
+        <div role="tabpanel" class="tab-pane" id="AnswerAfterNoFrom2ndNoFrom1st">
+          <h3 class="text-center">Tendrás que invertir en una caja de seguridad</h3>
+          <br>
+          <p style="text-align: center;"> <img src="https://images-na.ssl-images-amazon.com/images/I/61nIkHDqb1L._AC_SX466_.jpg"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /.container -->
+</body>
+</html>
